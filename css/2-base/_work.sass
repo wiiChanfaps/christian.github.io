@@ -1,0 +1,82 @@
+.work
+  height: 100vh
+  background:
+    image: url(../images/products.jpg)
+    size: cover
+
+.site-placeholder
+  padding-top: 65px
+
+.thumb-unit
+  width: 100%
+  height: 240px
+  background: 
+    repeat: no-repeat
+    size: cover
+  display: block
+  position: relative
+  text-decoration: none
+  color: black
+  overflow: hidden
+  opacity: 0.8
+
+  .thumb-overlay-thane
+    +position(absolute, 0% 0px null 0px)
+    height: 100%
+    background: 
+      image: url(../overlay/pattern-6.png)
+    opacity: 0.4
+    +transition
+    font:
+      size: 60px
+      family: 'Rajdhani', sans-serif
+      weight: 100
+    +display(flex)
+    +align-items(center)
+    +justify-content(space-around)
+
+
+  &:hover .thumb-overlay-thane
+    +position(absolute, 100% 0px null 0px)
+
+
+  .thumb-overlay-heralo
+    +position(absolute, 0% 0px null 0px)
+    height: 100%
+    background: 
+      image: url(../overlay/pattern-6.jpg)
+    opacity: 0.4
+    +transition
+    font:
+      size: 60px
+      family: 'Rajdhani', sans-serif
+      weight: 100
+    color: gray
+    +display(flex)
+    +align-items(center)
+    +justify-content(space-around)
+
+
+  &:hover .thumb-overlay-heralo
+    +position(absolute, 100% 0px null 0px)
+
+
+  .thumb-overlay-gemslake
+    +position(absolute, 0% 0px null 0px)
+    height: 100%
+    background: 
+      image: url(../overlay/pattern-5.jpg)
+    opacity: 0.4
+    +transition
+    font:
+      size: 60px
+      family: 'Rajdhani', sans-serif
+      weight: 100
+    color: black
+    +display(flex)
+    +align-items(center)
+    +justify-content(space-around)
+
+
+  &:hover .thumb-overlay-gemslake
+    +position(absolute, 100% 0px null 0px)

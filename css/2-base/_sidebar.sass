@@ -1,0 +1,60 @@
+.unit
+  height: 100px
+  width: 30%
+  margin: 1.5%
+  background: #ccc
+  float: left
+
+.page-content
+  position: relative
+  z-index: 0
+  +transition()
+  background: #eee
+
+.toggle
+  text-decoration: none
+  font-size: 30px
+  color: #A9A9A9
+  +transition()
+  +position(fixed, 20px 0 0 20px)
+  z-index: 1
+  cursor: pointer
+  height: 50px
+  width: 50px
+
+
+.sidebar
+  +position(fixed, 0px 0 0px -190px)
+  +transition()
+  width: 80px
+  padding: 30px
+  background: #333
+  z-index: 0
+
+  a
+    text-decoration: none
+    color: rgba(255,255,255,0.8)
+    font-family: "Ubuntu", sans-serif
+    font-size: 16px
+    margin: 0
+    margin-bottom: 16px
+    -webkit-font-smoothing: antialiased
+
+    &:hover
+      color: rgba(255,255,255,1)
+  
+
+
+#sidebartoggler
+  display: none
+  
+  &:checked + .page-wrap
+    
+    .sidebar
+      left: 0px
+    
+    .toggle
+      left: 160px
+    
+    .page-content
+      padding-left: 80px
