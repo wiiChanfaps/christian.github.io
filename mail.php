@@ -10,14 +10,15 @@ $message = "Greetings!,
 
     Comment was received
 
-    Comments:$comments
+    Comments: $comments
 
     End of message
     ";
 
 mail($myemail, $subject ,$message);
 
-header('location: thanks.html');
+header('location: index.html');
+
 exit();
 
 function check_input($data, $problem='')
@@ -43,5 +44,6 @@ function show_error($myerror)
         <?php
         exit();
     }
+
 
 ?>  
