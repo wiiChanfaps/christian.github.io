@@ -1167,14 +1167,15 @@ h3 {
       .footer .link-placeholder .fb:hover, .footer .link-placeholder .ig:hover, .footer .link-placeholder .in:hover {
         opacity: 0.3;
         cursor: pointer; }
-  .footer .form-group label, .footer .form-group input {
-    margin-left: 55%; }
-  .footer .form-group label {
-    color: white; }
-  .footer .btn {
-    background-color: #323299;
-    color: white; }
-    .footer .btn:hover {
-      color: black; }
+
+form .form-group label, form .form-group input {
+  margin-left: 55%; }
+form .form-group label {
+  color: white; }
+form .btn {
+  background-color: #323299;
+  color: white; }
+  form .btn:hover {
+    color: black; }
 
 /*# sourceMappingURL=main.css.map */

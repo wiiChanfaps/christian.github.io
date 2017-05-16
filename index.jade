@@ -251,12 +251,11 @@ html(lang="en")
 								a(href="https://www.linkedin.com/in/christian-joseph-cunanan-859b4813a/")
 									img(src="link-icons/linkedin.png")
 
-
 						form.form-inline(role='form', action='mail.php', method='post')
 							.form-group
-								label.sr-only(for='email') Let me know what you think!
-								input(type='text', name='comment', placeholder='Put something here...')
-								button.btn(type='submit') Go!
+								label.sr-only(for='subscribe-email') Email address
+								input#subscribe-email.subscribe-email.form-control(type='text', name='email', placeholder='Enter your email...')
+								button.btn(type='submit') Subscribe
 						.success-message
 						.error-message
 
