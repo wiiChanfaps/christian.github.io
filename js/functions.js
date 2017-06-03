@@ -105,22 +105,23 @@ $(window).scroll(function(){
 
   if (wScroll <= pContainerHeight) {
 
-    $('.overlay1').css({
-      'transform' : 'translate(0px, '+ wScroll /40 +'%)'
+    $('.title1').css({
+      'transform' : 'translate(0px, '+ wScroll /5 +'%)'
     });
 
-    $('.overlay2').css({
-      'transform' : 'translate(0px, '+ wScroll /100 +'%)'
+    $('.title2').css({
+      'transform' : 'translate(0px, '+ wScroll /5 +'%)'
     });
 
-    $('.overlay3').css({
-      'transform' : 'translate(0px, -'+ wScroll /30 +'%)'
+    $('.addr').css({
+      'transform' : 'translate(0px, -'+ wScroll /5 +'%)'
     });
     
-    $('.title').css({
-      'transform' : 'translate(0px, '+ wScroll /20 +'%)'
+    $('.cno').css({
+      'transform' : 'translate(0px, '+ wScroll /5 +'%)'
     });
 
   }
 
 });
+

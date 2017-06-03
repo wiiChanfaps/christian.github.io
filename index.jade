@@ -2,11 +2,11 @@ doctype html
 html(lang="en")
 	head
 		meta(charset="utf-8")
-		title 
+		title Portfolio
 		meta(name="viewport", content="width=device-width", initial-scale="1")
 		link(rel="stylesheet", href="css/main.css")
 		link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Rajdhani")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Raleway|Roboto")
 
 	body
 
@@ -15,14 +15,22 @@ html(lang="en")
 			.page-wrap
 				label.toggle(for='sidebartoggler') ☰
 				.page-content
-			
-
 					header#home
 						.banner
-						.kick-wrapper
-							.kicker
-								span.link
-									a(href="#about") get started <i class="ion-chevron-right"></i>
+							.titleholder
+								.title1
+									p Christian
+								.title2
+									p Cunanan
+								.addr
+									p Dar Al Salam Bldg, Salahuddin Rd. UAE
+								.cno
+									p +971503192958
+
+							.kick-wrapper
+								.kicker
+									a(href="#about")
+										img(src="images/down.png")
 					
 					section#about
 						h3 Christian Cunanan
@@ -236,21 +244,33 @@ html(lang="en")
 									.client-quote-mark
 										img(src="clients-logo/icon-quote-mark.png")
 									p The HERALO Foundation is an active and non financial company, and unfolded a network in different industries and grow it's business and investments sucessful.
-					
 
-					section.footer
-						.link-placeholder
-							.fb
-								a(href="https://www.facebook.com/iiiiiChan")
-									img(src="link-icons/facebook.png")
+				.sidebar
+					ul(style="list-style: none;")
+						li
+							a(href="#home").hvr-ripple-out  Home
+						li
+							a(href="#about").hvr-ripple-out About
+						li
+							a(href="#work").hvr-ripple-out Projects
+						li
+							a(href="#clients").hvr-ripple-out Clients
 
-							.ig
-								a(href="https://www.instagram.com/wiichanfaps/")
-									img(src="link-icons/instagram.png")
-							.in
-								a(href="https://www.linkedin.com/in/christian-joseph-cunanan-859b4813a/")
-									img(src="link-icons/linkedin.png")
+					hr
 
+					.link-placeholder
+						.fb
+							a(href="https://www.facebook.com/iiiiiChan")
+								img(src="link-icons/fb.png")
+
+						.ig
+							a(href="https://www.instagram.com/wiichanfaps/")
+								img(src="link-icons/ig.png")
+						.in
+							a(href="https://www.linkedin.com/in/christian-joseph-cunanan-859b4813a/")
+								img(src="link-icons/in.png")
+
+					.subscribe
 						form.form-inline(role='form', action='mail.php', method='post')
 							.form-group
 								label.sr-only(for='subscribe-email') Email address
@@ -259,21 +279,5 @@ html(lang="en")
 						.success-message
 						.error-message
 
-					section#footer
-
-				.sidebar
-					ul(style="list-style: none;")
-						li
-							a(href="#home") Home
-						li
-							a(href="#about") About
-						li
-							a(href="#work") Projects
-						li
-							a(href="#clients") Clients
-						li
-							a(href="#footer") Contact
-			
 	script(src="js/jquery-2.1.3.min.js")
 	script(src="js/functions.js")
-

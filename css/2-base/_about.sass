@@ -2,6 +2,7 @@
   height: 130vh
   background: white url(../overlay/pattern.jpg)
   margin-top: -140px
+  @include angle(both)
 
 h3
   font:
@@ -20,7 +21,7 @@ h3
   .face-img
     +size(250px)
     order: 5
-    background: url(../about-img/face-img.png)
+    background: url(../about-img/face-img2.png)
     background-repeat: no-repeat
     background-size: cover
     border-radius: 50%
@@ -86,3 +87,5 @@ h3
     @for $i from 1 through 10
       &.skill-#{$i} span:nth-child(n+#{$i})
         background: gray
+
+      
