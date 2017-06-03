@@ -5139,7 +5139,7 @@ there.
     -webkit-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
-    z-index: 1;
+    z-index: 0;
     position: relative;
     opacity: 0; }
     .kick-wrapper .kicker img {
