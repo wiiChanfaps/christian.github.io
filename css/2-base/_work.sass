@@ -1,83 +1,72 @@
-.work
-  height: 100vh
-  background:
-    image: url(../images/products.jpg)
-    size: cover
-  @include angle(before, true)
-
-.site-placeholder
-  padding-top: 65px
-
-.thumb-unit
-  width: 100%
-  height: 240px
-  background: 
-    repeat: no-repeat
-    size: cover
-  display: block
-  position: relative
-  text-decoration: none
-  color: black
-  overflow: hidden
-  opacity: 0.8
-
-  .thumb-overlay-thane
-    +position(absolute, 0% 0px null 0px)
-    height: 100%
-    background: 
-      image: url(../overlay/pattern-6.png)
-    opacity: 0.4
-    +transition
-    font:
-      size: 60px
-      family: 'Rajdhani', sans-serif
-      weight: 100
-    +display(flex)
-    +align-items(center)
-    +justify-content(space-around)
+.face-lockup
+  max-width: 1250px
+  +display(flex)
+  margin: 0 auto
+  +align-items(center)
+  +justify-content(space-around)
 
 
-  &:hover .thumb-overlay-thane
-    +position(absolute, 100% 0px null 0px)
+  .face-img
+    +size(250px)
+    order: 5
+    background: url(../about-img/face-img.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 50%
 
 
-  .thumb-overlay-heralo
-    +position(absolute, 0% 0px null 0px)
-    height: 100%
-    background: 
-      image: url(../overlay/pattern-6.jpg)
-    opacity: 0.4
-    +transition
-    font:
-      size: 60px
-      family: 'Rajdhani', sans-serif
-      weight: 100
-    color: gray
-    +display(flex)
-    +align-items(center)
-    +justify-content(space-around)
+  [class^="icon-"]
+    +size(120px)
+    background: #e5eaee 
+    border-radius: 50%
+
+    img
+      margin: 25%
+
+    &.icon-server
+      order: 1
+
+    &.icon-network
+      order: 2
+
+    &.icon-troubleshoot
+      order: 5
+
+    &.icon-coding
+      order: 6
 
 
-  &:hover .thumb-overlay-heralo
-    +position(absolute, 100% 0px null 0px)
+.skill-lockup
+  max-width: 700px
+  margin: 270px auto
+  color: #999
+  padding-left: 200px
 
 
-  .thumb-overlay-gemslake
-    +position(absolute, 0% 0px null 0px)
-    height: 100%
-    background: 
-      image: url(../overlay/pattern-5.jpg)
-    opacity: 0.4
-    +transition
-    font:
-      size: 60px
-      family: 'Rajdhani', sans-serif
-      weight: 100
-    color: black
-    +display(flex)
-    +align-items(center)
-    +justify-content(space-around)
+  .skill-unit
+    width: 350px
+    float: left
+
+  .skill-icons
+    margin-bottom: 30px
+
+    span 
+      display: inline-block
+      +size(14px)
+      background-color: orange
+      margin-right: 5px
+
+      &:after
+        content: ''
+        display: block
+        +size(10px)
+        background: #fff
+        margin: 2px
+
+    @for $i from 1 through 10
+      &.skill-#{$i} span:nth-child(n+#{$i})
+        background: gray
 
 
-  &:hover .thumb-overlay-gemslake
-    +position(absolute, 100% 0px null 0px)
+
+
